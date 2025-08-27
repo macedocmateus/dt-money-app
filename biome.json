@@ -29,7 +29,8 @@
                 }
             },
             "correctness": {
-                "useExhaustiveDependencies": "warn"
+                "useExhaustiveDependencies": "warn",
+                "useHookAtTopLevel": "warn"
             },
             "style": {
                 "useConsistentObjectDefinitions": "warn",

@@ -1,9 +1,18 @@
-import { Text, View } from "react-native";
+import { useNavigation } from '@react-navigation/native';
+import type { StackNavigationProp } from '@react-navigation/stack';
+import { Text, TouchableOpacity, View } from 'react-native';
+import type { PublicStackParamsList } from '@/routes';
 
 export function Login() {
+    const navigation =
+        useNavigation<StackNavigationProp<PublicStackParamsList>>();
+
     return (
         <View className="flex-1 items-center justify-center">
-            <Text>Olá Mundo</Text>
+            <Text>Tela de login!</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Register')}>
+                <Text>Registrar</Text>
+            </TouchableOpacity>
         </View>
-    )
+    );
 }
