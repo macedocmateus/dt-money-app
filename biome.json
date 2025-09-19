@@ -15,7 +15,8 @@
             },
             "suspicious": {
                 "noConsole": "warn",
-                "noExplicitAny": "warn"
+                "noExplicitAny": "warn",
+                "noCommentText": "warn"
             },
             "complexity": {
                 "noUselessConstructor": "warn",
